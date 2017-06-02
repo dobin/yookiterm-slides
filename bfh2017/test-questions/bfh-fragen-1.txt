@@ -1,0 +1,37 @@
+Exploiting Related
+
+Prüfungsrelevant, Beispiele:
+1: Was für memory regionen gibt es in prozessen? Für was sind sie da? Von wo kommen sie?
+2: Was ist genau das problem bei memory corruptions?
+3: Wieso gibt es eigentlich memory corruptions?
+4: was braucht es alles für einen funktionsfähigen exploit?
+5: wie genau funktioniert eigentlich ein exploit?
+6: Warum steht der instruction pointer (RIP) auf dem stack (SIP)?
+7: Kannst du mir grob eine grafik des Stacks für die folgende Funktion zeichnen?
+8: Welche Programme kann man mittels eines Exploit angreifen?
+9: Was ist shellcode?
+
+Super short beispiel lösungen, die etwa genügend geben würden:
+1: stack, heap, code. für lokale variablen, malloc, ausführbarer code. vom ELF file
+2: man kann zeugs von einem programm zur laufzeit überschreiben, dass man nicht überschreiben dürfen sollte. und dadurch böse sachen machen, z.B. code ausführen. die integrität des programs und des computers auf dem es läuft ist nicht mehr gewärleistet
+3: C beachtet memory grenzen für arrays nicht
+4: shellcode, addresse des shellcodes (im angegriffenen prozess), location des SIP
+5: Mittels memory corruption wird SIP überschrieben, und dann hochgeladener assembler code (shellcode) angesprungen
+6: Damit die Funktion weiss, wo es nach dem Ende der Funktion weitergeht. 
+8: prinzipiell alle, die daten des angreifers entgegennehmen, und in in C/C++ geschrieben sind. 
+9: In sich abgeschlossener, ausführbarer assembler code der für angriffe gegen andere programme eingesetzt wird. Startet oft eine shell (bash).
+
+
+NICHT (umbedingt) prüfungsrelevant, Beispiele:
+- In welchem register steht die addresse des strings beim write systemcall?
+- Mit welchem GDB befehl findet man die adresse eines buffers heraus?
+- welche optionen hat GDB?
+- kannst du den folgenden assembler code so ummodeln, dass es keine 0 bytes mehr gibt?
+- nenne mir 5 unterschiede zwischen x32 und x64
+- Kannst du mir die zahl 31337 nach hex konvertieren, und als little endian speichern?
+- erklär mir step-by-step wie das aufrufen einer funktion unter x64 funktioniert (speziell der funktionsprolog und epilog, mit EBP, SFP etc.)
+- Erklär mir was ein Computer für komponenten hat
+- Erklär mir, wie die CPU funktioniert
+- Was gibt es für register? Wofür werden sie gebraucht?
+- Für was sind die sections bei ELF da?
+
