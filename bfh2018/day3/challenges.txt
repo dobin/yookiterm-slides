@@ -1,0 +1,6 @@
+8	C buffer analysis - with debugging
+9	Simple Buffer overflow - variable overwrite
+10	Simple Buffer overflow - RCE
+11	Development of a buffer overflow exploit - 32 bit
+12	Development of a buffer overflow exploit - 64 bit
+13	Development of a remote buffer overflow exploit - 64 bit
