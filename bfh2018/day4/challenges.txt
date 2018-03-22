@@ -1,2 +1,1 @@
-14	Stack canary brute force
 15	Simple remote buffer overflow exploit - ASLR/DEP/64bit
