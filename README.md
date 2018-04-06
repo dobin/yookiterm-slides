@@ -25,3 +25,7 @@ Content:
 * Linux Hardening
 * Kernel Exploitation basics
 * Hardware Hacking
+
+## Links / Resources
+
+See [Resources](resources.md)
