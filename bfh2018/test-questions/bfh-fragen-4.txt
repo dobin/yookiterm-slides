@@ -1,0 +1,18 @@
+ROP Related 
+
+Questions: 
+1) Was ist ROP?
+2) Wie findet man ROP gadgets?
+3) Wie funktionieren ROP?
+4) Was braucht man für ROP?
+5) Wie verhindert man ROP?
+6) Wie ist ein ROP basiert exploit generell aufgebaut?
+
+Answers: 
+1) Return oriented programming; das aneinanderfügen von vorhandenen code bestandteilen, die mit einem RET enden 
+2) Suche nach dem RET byte im code segment, dann rückwärts disassemblieren bis/solange gültige (und nützliche) code sequencen auftauchen 
+3) Die überschriebene (rücksprung) Addresse zeigt auf das erste rop gadget. Jedes gadget konsumiert argumente vom stack via pop. Erreicht man ein RET auf dem gadget, wird via dem stack die addresse des nächsten gadgets konsumiert. 
+4) gadgets, bzw. deren addressen. Dafür muss im angreifbaren prozess das code segment nicht ASLR't sein (kein PIE), oder bei windows eine nicht ASLR'te library existieren. Alternativ kann ein Informatino disclosure durchgeführt werden, um diese addressen zu bekommen. 
+5) Es dürfen keine statischen segmente mehr existieren. Bei Linux kompiliert man das Program mit PIE (libraries werden automatisch randomisiert eingebunden). Bei Windows dürfen keine nicht-ASLR'ten DLLs geladen werden. 
+6) Als erstes wird die ROPchain ausgeführt. Diese enthält funktionalität, um dann einfach weiteren code auszuführen, ist also eine Art Stager. Zum Beispiel ist es möglich den Stack ausführbar zu machen, oder LIBC funktionen wie system() zu eruieren. 
+

@@ -1,0 +1,19 @@
+Memory Corruption Related 
+
+Questions: 
+1) Wieso gibt es überhaupt memory corruption?
+2) Gibt es in C funktionen, die man als entwickler nicht benutzen sollte?
+3) Wo ist das Problem beim Handling von String in C?
+4) Und bei integer overflows?
+
+5) Was für möglichkeiten gibt es um memory corruption schwachstellen zu identifizieren?
+6) Wie funktioniert fuzzing?
+
+Answers: 
+1) Programmiersprachen wie C und C++ überprüfen nicht, ob über ein Array hinausgeschrieben wird. Durch freie manipulation von Pointern auf den ganzen Addressraum ist es möglich auf Daten zu schreiben, auf die das nicht möglich sein sollte. 
+2) Generell alle string funktionen, die nicht die grösse des ziel-buffers als berücksichtigen (strcpy etc.)
+3) Das beendende Null Zeichen, der das ende des Strings indiziert, kann fehlen bzw. überschrieben werden. Dadurch werden annahmen an die Länge des Strings invalidiert. 
+4) Einfachster fall ist dass ein vom angreifer kontrollierter wert in einer berechnung von malloc genutzt wird, und der alloziert speicher kleiner ist als die anzahl bytes die kopiert werden
+
+5) z.B. Statische analyse, fuzzing, manueller code review
+6) An das programm werden mehr oder weniger zufällige daten geschickt, um einen crash zu produzieren 

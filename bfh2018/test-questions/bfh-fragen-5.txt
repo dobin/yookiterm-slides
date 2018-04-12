@@ -1,0 +1,18 @@
+Heap Overflows Related
+
+Questions:
+1) Für was ist der Heap?
+2) Wie funktioniert der heap?
+3) Was ist ein chunk?
+4) Kann man Heap buffer overflows machen?
+5) Was ist ein use-after-free angriff?
+6) Wie wird eine UAF Schwachstelle oft ausgenutzt?
+
+
+Answers: 
+1) malloc() allokationen / dynamische, globale datenstrukturen 
+2) malloc() alloziiert ein paar memory pages. Jede page wird in gleich grosse stücke (chunks) unterteilt. beim aufruf von malloc() wird ein freier chunk zurückgegeben 
+3) Ein heap element, dass ein für den user schreibbaren bereich enthält, plus heap metainformationen 
+4) Ja. Wie beim stack existieren meta/control informationen für den heap, auf dem heap. Durch geschickte manipulation der heap metadaten und allokation/deallokation von chunks kann es möglich sein, beliebige daten an beliebige stellen im speicher zu schreiben 
+5) Ein memory bereich wird gleichzeitig durch zwei unterschiedliche stellen im code benutzt (zwei pointer auf den gleichen speicher bereich). Dadurch lassen sich objekte in diesem speicher (beliebig) manipulieren. 
+6) Ein Speicherbereich wird versehentlich freigeben. Danach wird ein neues C++ Objekt generiert, dessen vtable in diesen freigegebenen Speicher gespeichert wird. Durch das manipulieren des ursprünglichen Pointers können diese vtable Eintrage, was einfach Pointer zu Funktionen sind, verändert werden. Z.B. ist es möglich, sie auf ein ROP Gadget zu zeigen, welches dann ein stack-flip durchführt. 
