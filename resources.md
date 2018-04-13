@@ -28,6 +28,15 @@ Good ones have been tagged by *Recommended*.
 * GOT, PLT, RELRO description, exploiting related
 * Recommended
 
+[Exploiting Cheat sheet](https://pbs.twimg.com/media/DaCPl0QW0AAsL1E.jpg:large)
+* Picture
+* Cheatsheet
+
+[file descriptors](https://pbs.twimg.com/media/DaEj6zWVwAEl9eH.jpg)
+* Picture
+* File Descriptors in Linux
+
+
 # Linux Exploitation
 
 [Bypass ASLR+NX Part 1](http://intx0x80.blogspot.ch/2018/04/bypass-aslrnx-part-1.html)
@@ -152,3 +161,12 @@ Good ones have been tagged by *Recommended*.
 [BugID](https://github.com/SkyLined/BugId)
 * Tool
 * Check if a crash is exploitable
+
+
+# Debugging
+
+[C++ links: debugging: articles, documentation, software, and talks](https://github.com/MattPD/cpplinks/blob/master/debugging.md)
+* List of resources
+* Many many links
+
+
