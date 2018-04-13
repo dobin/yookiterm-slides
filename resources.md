@@ -162,6 +162,11 @@ Good ones have been tagged by *Recommended*.
 * Tool
 * Check if a crash is exploitable
 
+[Windows 10 mitigations improvements](https://www.blackhat.com/docs/us-16/materials/us-16-Weston-Windows-10-Mitigation-Improvements.pdf)
+* Anti exploit mitigations in windows 10
+* Lots of statistics, data, techniques
+* 2016
+* Recommended
 
 # Debugging
 
