@@ -74,12 +74,6 @@ Good ones have been tagged by *Recommended*.
 * 2018
 * Heap introduction, exploiting view
 
-[Exim Off-by-one RCE: Exploiting CVE-2018-6789 with Fully Mitigations Bypassing](https://devco.re/blog/2018/03/06/exim-off-by-one-RCE-exploiting-CVE-2018-6789-en/)
-* 2018 
-* Exim RCE
-* Intersting Heap Massage 
-* Recommended
-
 
 # Linux Kernel Exploitation
 
@@ -147,6 +141,14 @@ Good ones have been tagged by *Recommended*.
 * 2018, pwn2own bug
 * Heap exploit
 
+[CVE-2017-0236 analysis](http://math1as.com/2018/04/10/CVE-2017-0236-analysis/)
+* UAF in Edge analysis, windbg
+* 2018
+
+[Attacking JavaScript Engines](http://phrack.org/papers/attacking_javascript_engines.html)
+* 2016 
+* A case study of JavaScriptCore and CVE-2016-4622
+
 
 # CTF
 
@@ -177,6 +179,10 @@ Good ones have been tagged by *Recommended*.
 * Lots of statistics, data, techniques
 * 2016
 * Recommended
+
+[Breaking CFI: Exploiting CVE-2015-5122 using COOP.](https://perception-point.io/2018/04/11/breaking-cfi-cve-2015-5122-coop/)
+* New technique to bypass some CFI implementations
+
 
 # Debugging
 
