@@ -74,6 +74,12 @@ Good ones have been tagged by *Recommended*.
 * 2018
 * Heap introduction, exploiting view
 
+[Exim Off-by-one RCE: Exploiting CVE-2018-6789 with Fully Mitigations Bypassing](https://devco.re/blog/2018/03/06/exim-off-by-one-RCE-exploiting-CVE-2018-6789-en/)
+* 2018 
+* Exim RCE
+* Intersting Heap Massage 
+* Recommended
+
 
 # Linux Kernel Exploitation
 
@@ -136,6 +142,10 @@ Good ones have been tagged by *Recommended*.
 * Presentation, Code
 * 2018.03
 * JavaScript, Heap
+
+[How to kill a (Fire)fox](http://blogs.360.cn/blog/how-to-kill-a-firefox-en/)
+* 2018, pwn2own bug
+* Heap exploit
 
 
 # CTF
