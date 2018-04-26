@@ -28,6 +28,15 @@ Good ones have been tagged by *Recommended*.
 * GOT, PLT, RELRO description, exploiting related
 * Recommended
 
+ELF Intro
+* [Executable and Linkable Format 101 - Part 1 Sections and Segments
+](http://www.intezer.com/executable-linkable-format-101-part1-sections-segments/)
+* [Executable and Linkable Format 101. Part 2: Symbols
+](https://www.intezer.com/executable-linkable-format-101-part-2-symbols/)
+* [Executable and Linkable Format 101 Part 3: Relocations
+](https://www.intezer.com/executable-and-linkable-format-101-part-3-relocations/)
+
+
 [Exploiting Cheat sheet](https://pbs.twimg.com/media/DaCPl0QW0AAsL1E.jpg:large)
 * Picture
 * Cheatsheet
@@ -35,6 +44,10 @@ Good ones have been tagged by *Recommended*.
 [file descriptors](https://pbs.twimg.com/media/DaEj6zWVwAEl9eH.jpg)
 * Picture
 * File Descriptors in Linux
+
+[JULIA'S DRAWINGS](https://drawings.jvns.ca/)
+* Simple drawings about linux fundamentals 
+* Recommended
 
 
 # Linux Exploitation
@@ -53,6 +66,12 @@ Good ones have been tagged by *Recommended*.
 * About how ASLR in current Linux Kernels works, in details
 * Shows some tiny ASLR weaknesses
 * Code: https://github.com/blackzert/aslur
+
+
+[ROPping to Victory](https://jmpesp.me/rop-emporium-ret2win-with-radare-and-pwntools/)
+* 2018
+* ROP guide with radare
+* Very simple buffer overflow, which calls a predefined function
 
 
 # Heap Exploitation
@@ -122,12 +141,18 @@ Good ones have been tagged by *Recommended*.
 * Fuzz dedicated functions of a binary with libfuzzer
 
 
-# General Exploitation
+# VM Exploitation
 
 [Unboxing your virtualBox - Niklas Baumstark](https://www.youtube.com/watch?v=fFaWE3jt7qU)
 * Virtualbox Exploitation
 * Video
 * 2018
+
+[A bunch of Red Pills: VMware Escapes]https://keenlab.tencent.com/en/2018/04/23/A-bunch-of-Red-Pills-VMware-Escapes/
+* List of several VMWare exploits (guest to host)
+* 2018
+* Good overview
+
 
 
 # Browser Exploitation
@@ -183,6 +208,17 @@ Good ones have been tagged by *Recommended*.
 [Breaking CFI: Exploiting CVE-2015-5122 using COOP.](https://perception-point.io/2018/04/11/breaking-cfi-cve-2015-5122-coop/)
 * New technique to bypass some CFI implementations
 
+[Exploiting CVE-2018-1038 - Total Meltdown](https://blog.xpnsec.com/total-meltdown-cve-2018-1038/)
+* Win7 Fail Meltdown Patch exploit 
+* Writing an easy Kernel exploit
+
+
+# Shellcoding 
+
+[How to write a (Linux x86) egg hunter shellcode](https://adriancitu.com/2015/10/05/how-to-write-an-egg-hunter-shellcode/)
+* 2018 
+* Short article about egghunting (finding most of shellcode somewhere in memory)
+
 
 # Debugging
 
@@ -190,4 +226,18 @@ Good ones have been tagged by *Recommended*.
 * List of resources
 * Many many links
 
+# Reverse Engineering 
+
+[Reverse Engineering x64 for Beginners – Linux](http://niiconsulting.com/checkmate/2018/04/reverse-engineering-x64-for-beginners-linux/)
+* 2018 
+* Intro into reversing with GDB
+
+[Reverse Engineering With Radare2 – Part 3](https://insinuator.net/2016/10/reverse-engineering-with-radare2-part-3/)
+* 2018
+* Using Radare to reverse
+
+
+[BOLO: Reverse Engineering — Part 1 (Basic Programming Concepts)](https://medium.com/bugbountywriteup/bolo-reverse-engineering-part-1-basic-programming-concepts-f88b233c63b7)
+* 2018
+* How basic functions look in assembly
 
