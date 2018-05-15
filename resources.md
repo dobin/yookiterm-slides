@@ -67,11 +67,16 @@ ELF Intro
 * Shows some tiny ASLR weaknesses
 * Code: https://github.com/blackzert/aslur
 
-
 [ROPping to Victory](https://jmpesp.me/rop-emporium-ret2win-with-radare-and-pwntools/)
 * 2018
 * ROP guide with radare
 * Very simple buffer overflow, which calls a predefined function
+
+[Binary Exploitation ELI5– Part 1
+](https://medium.com/@danielabloom/binary-exploitation-eli5-part-1-9bc23855a3d8)
+* Some intro to computers, memory model
+* 2018
+* Simple intro
 
 
 # Heap Exploitation
@@ -82,6 +87,8 @@ ELF Intro
 * No shellcode used
 * 2018
 * Recommended
+* Exploit Writeup: [My PoC walk through for CVE-2018–6789
+](https://medium.com/@straightblast426/my-poc-walk-through-for-cve-2018-6789-2e402e4ff588)
 
 [From Heap to RIP](http://blog.frizn.fr/glibc/glibc-heap-to-rip)
 * 2018
@@ -92,6 +99,18 @@ ELF Intro
 * Recommended
 * 2018
 * Heap introduction, exploiting view
+
+x86 exploitation - heap overflows
+* 2015
+* Inter-chunk overflows and similar
+* [House Of Spirit](https://gbmaster.wordpress.com/2015/07/21/x86-exploitation-101-house-of-spirit-friendly-stack-overflow/)
+* [House Of Lore](https://gbmaster.wordpress.com/2015/07/16/x86-exploitation-101-house-of-lore-people-and-traditions/)
+* [House Of Force](https://gbmaster.wordpress.com/2015/06/28/x86-exploitation-101-house-of-force-jedi-overflow/)
+* [House Of Mind](https://gbmaster.wordpress.com/2015/06/15/x86-exploitation-101-house-of-mind-undead-and-loving-it/)
+
+[Heap Viewer](https://github.com/danigargu/heap-viewer)
+* Tool for IDA 
+* ptmalloc2 heap viewer
 
 
 # Linux Kernel Exploitation
@@ -154,7 +173,6 @@ ELF Intro
 * Good overview
 
 
-
 # Browser Exploitation
 
 [Building a 1-day Exploit for Google Chrome](https://github.com/theori-io/zer0con2018_bpak)
@@ -173,6 +191,12 @@ ELF Intro
 [Attacking JavaScript Engines](http://phrack.org/papers/attacking_javascript_engines.html)
 * 2016 
 * A case study of JavaScriptCore and CVE-2016-4622
+
+[Root cause analysis of the latest Internet Explorer zero day – CVE-2018-8174](https://securelist.com/root-cause-analysis-of-cve-2018-8174/85486/)
+* 2018 
+* UAF
+* Short writeup
+
 
 
 # CTF
@@ -226,6 +250,7 @@ ELF Intro
 * List of resources
 * Many many links
 
+
 # Reverse Engineering 
 
 [Reverse Engineering x64 for Beginners – Linux](http://niiconsulting.com/checkmate/2018/04/reverse-engineering-x64-for-beginners-linux/)
@@ -236,8 +261,8 @@ ELF Intro
 * 2018
 * Using Radare to reverse
 
-
 [BOLO: Reverse Engineering — Part 1 (Basic Programming Concepts)](https://medium.com/bugbountywriteup/bolo-reverse-engineering-part-1-basic-programming-concepts-f88b233c63b7)
 * 2018
 * How basic functions look in assembly
+
 
