@@ -20,6 +20,11 @@ Good ones have been tagged by *Recommended*.
 * GDB Intro, Reversing Intro, Exploiting Intro
 
 
+[Binary Exploitation](https://github.com/r0hi7/BinExp)
+* 6 Lectures
+* Intro to stack exploit, shellcode, ASLR, ret2libc, formatstring
+
+
 # Fundamentals 
 
 [GOT and PLT for pwning ](https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html)
@@ -28,6 +33,12 @@ Good ones have been tagged by *Recommended*.
 * GOT, PLT, RELRO description, exploiting related
 * Recommended
 
+
+[What are the GOT and PLT? — Part 1](http://jjc.re/2017/12/what-are-the-got-and-plt-pt1)
+* 2017
+* Good writeup
+
+
 ELF Intro
 * [Executable and Linkable Format 101 - Part 1 Sections and Segments
 ](http://www.intezer.com/executable-linkable-format-101-part1-sections-segments/)
@@ -35,6 +46,11 @@ ELF Intro
 ](https://www.intezer.com/executable-linkable-format-101-part-2-symbols/)
 * [Executable and Linkable Format 101 Part 3: Relocations
 ](https://www.intezer.com/executable-and-linkable-format-101-part-3-relocations/)
+
+[https://blog.k3170makan.com/2018/09/introduction-to-elf-format-elf-header.html](Introduction to the ELF Format : The ELF Header (Part I)
+)
+* ATM Newst part, number 6: [Introduction to the ELF Format (Part VI) : The Symbol Table and Relocations (Part 1)
+](https://blog.k3170makan.com/2018/10/introduction-to-elf-format-part-vi.html)
 
 
 [Exploiting Cheat sheet](https://pbs.twimg.com/media/DaCPl0QW0AAsL1E.jpg:large)
@@ -48,6 +64,11 @@ ELF Intro
 [JULIA'S DRAWINGS](https://drawings.jvns.ca/)
 * Simple drawings about linux fundamentals 
 * Recommended
+
+[Linux Internals - The Art Of Symbol Resolution](https://0x00sec.org/t/linux-internals-the-art-of-symbol-resolution/1488)
+* adjectant to exploiting, interesting nevertheless
+* Dynamic linking, got/plt related
+
 
 
 # Linux Exploitation
@@ -77,6 +98,13 @@ ELF Intro
 * Some intro to computers, memory model
 * 2018
 * Simple intro
+
+
+[STACK BASED BUFFER OVERFLOW ON 64 BIT LINUX
+](https://www.ret2rop.com/2018/08/stack-based-buffer-overflow-x64.html)
+* Some Binary and Ascii intro 
+* Setuid, ASLR
+* Write a BOF exploit for 64 bit linux
 
 
 # Heap Exploitation
@@ -112,14 +140,23 @@ x86 exploitation - heap overflows
 * Tool for IDA 
 * ptmalloc2 heap viewer
 
+[Automatic Heap Layout Manipulation for Exploitation](https://arxiv.org/pdf/1804.08470.pdf)
+* Paper
+* 2018
+* "SHRIKE discovers fragments of PHP code that interact with the interpreter’s heap in useful ways, such as making allocations and deallocations of particular sizes, or allocating objects containing sensitive data, such as pointers."
+
 
 # Linux Kernel Exploitation
 
-[Linux-Kernel-Exploit Stack Smashing
-](http://tacxingxing.com/2018/02/15/linux-kernel-exploit-stack-smashing/)
+[Linux-Kernel-Exploit Stack Smashing](http://tacxingxing.com/2018/02/15/linux-kernel-exploit-stack-smashing/)
 * 2018-02-15
 * "Principle of kernel stack overflow and the user mode stack overflow are the same, we can use it to hijack control flow and privilge Escalation in Ring 0."
 * Writeup
+
+
+[MMap Vulnerabilities – Linux Kernel](https://research.checkpoint.com/mmap-vulnerabilities-linux-kernel/)
+* 2018
+* MMAP errors in drivers
 
 
 # Linux Defense 
@@ -198,12 +235,15 @@ x86 exploitation - heap overflows
 * Short writeup
 
 
-
 # CTF
 
 [Pwntools Quick Reference Guide](http://blog.eadom.net/uncategorized/pwntools-quick-reference-guide/)
 * Short overview of useful pwntools features
 * 2016
+
+[CTF Field Guide](https://trailofbits.github.io/ctf/)
+* "In these chapters, you’ll find everything you need to win your next CTF competition"
+
 
 # Embedded Systems Exploiting
 
@@ -236,13 +276,44 @@ x86 exploitation - heap overflows
 * Win7 Fail Meltdown Patch exploit 
 * Writing an easy Kernel exploit
 
+[ANALYSIS OF A WIN32K NULL POINTER DEREFERENCE BY MATCHING THE MAY PATCH](https://xiaodaozhi.com/exploit/156.html)
+* 2018
+
+(A tale of two zero-days)[https://www.welivesecurity.com/2018/05/15/tale-two-zero-days/]
+* Double zero-day vulnerabilities fused into one. A mysterious sample enables attackers to execute arbitrary code with the highest privileges on intended targets
+
+[Adobe, Me and a Double Free :: Analyzing the CVE-2018-4990 Zero-Day Exploit](https://srcincite.io/blog/2018/05/21/adobe-me-and-a-double-free.html)
+* 2018
+* Double Free
+
+[7-Zip: From Uninitialized Memory to Remote Code Execution](https://landave.io/2018/05/7-zip-from-uninitialized-memory-to-remote-code-execution/)
+* 2018 
+* Bug analysis 
+
+[Game hacking reinvented? – A cod exploit](https://momo5502.com/blog/?p=34)
+* 2017
+* Call of duty game exploit
+* Exploit: https://github.com/momo5502/cod-exploit
+
+[Reverse engineering the Path of Exile game protocol - Part 1: Obtaining the plaintext](http://tbinarii.blogspot.ch/2018/05/reverse-engineering-path-of-exile.html)
+* 2018
+* Only reversing, no exploiting
+
+[Analysis of CVE-2018-8174 VBScript 0day and APT actor related to Office targeted attack](http://blogs.360.cn/blog/cve-2018-8174-en/)
+* 2018
+* APT related, MS related
+
 
 # Shellcoding 
 
 [How to write a (Linux x86) egg hunter shellcode](https://adriancitu.com/2015/10/05/how-to-write-an-egg-hunter-shellcode/)
 * 2018 
 * Short article about egghunting (finding most of shellcode somewhere in memory)
+* Related: [Why do we need Egg Hunters ?](https://oxhat.blogspot.ch/2018/04/why-do-we-need-egg-hunters.html)
 
+[https://github.com/wetw0rk/Sickle](https://github.com/wetw0rk/Sickle)
+* Tool
+* "Sickle is a shellcode development tool created to speed up the various steps needed to create functioning shellcode."
 
 # Debugging
 
