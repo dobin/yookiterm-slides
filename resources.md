@@ -47,8 +47,8 @@ ELF Intro
 * [Executable and Linkable Format 101 Part 3: Relocations
 ](https://www.intezer.com/executable-and-linkable-format-101-part-3-relocations/)
 
-[https://blog.k3170makan.com/2018/09/introduction-to-elf-format-elf-header.html](Introduction to the ELF Format : The ELF Header (Part I)
-)
+[Introduction to the ELF Format : The ELF Header (Part I)
+](https://blog.k3170makan.com/2018/09/introduction-to-elf-format-elf-header.html)
 * ATM Newst part, number 6: [Introduction to the ELF Format (Part VI) : The Symbol Table and Relocations (Part 1)
 ](https://blog.k3170makan.com/2018/10/introduction-to-elf-format-part-vi.html)
 
@@ -204,7 +204,7 @@ x86 exploitation - heap overflows
 * Video
 * 2018
 
-[A bunch of Red Pills: VMware Escapes]https://keenlab.tencent.com/en/2018/04/23/A-bunch-of-Red-Pills-VMware-Escapes/
+[A bunch of Red Pills: VMware Escapes](https://keenlab.tencent.com/en/2018/04/23/A-bunch-of-Red-Pills-VMware-Escapes/)
 * List of several VMWare exploits (guest to host)
 * 2018
 * Good overview
@@ -279,7 +279,7 @@ x86 exploitation - heap overflows
 [ANALYSIS OF A WIN32K NULL POINTER DEREFERENCE BY MATCHING THE MAY PATCH](https://xiaodaozhi.com/exploit/156.html)
 * 2018
 
-(A tale of two zero-days)[https://www.welivesecurity.com/2018/05/15/tale-two-zero-days/]
+[A tale of two zero-days](https://www.welivesecurity.com/2018/05/15/tale-two-zero-days/)
 * Double zero-day vulnerabilities fused into one. A mysterious sample enables attackers to execute arbitrary code with the highest privileges on intended targets
 
 [Adobe, Me and a Double Free :: Analyzing the CVE-2018-4990 Zero-Day Exploit](https://srcincite.io/blog/2018/05/21/adobe-me-and-a-double-free.html)
