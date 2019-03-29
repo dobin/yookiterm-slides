@@ -256,6 +256,11 @@ x86 exploitation - heap overflows
 * 2018
 * Complete ARM exploitation intro
 
+[Exploitation of a Vanilla Buffer Overflow in the o2 HomeBox 6441 Router - A Step by Step Abuse Guide](https://nsideattacklogic-tech.blogspot.com/2019/03/exploitation-of-vanilla-buffer-overflow.html)
+* Step by step
+* Simple expoloit, plus code
+* Not so much ARM related
+
 
 # Windows
 
