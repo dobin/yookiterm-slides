@@ -1,0 +1,8 @@
+Account via hacking-lab.com
+
+https://exploit.courses
+* Challenge 0: Introduction to memory layout – basic
+* Challenge 1: Introduction to memory layout - advanced
+
+Optional: 
+* Challenge 4: Introduction to hex numbers, code and GDB
