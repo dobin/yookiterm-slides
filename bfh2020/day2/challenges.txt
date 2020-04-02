@@ -1,0 +1,4 @@
+3	Introduction to shellcode development
+7	Function Call Convention in x86 (32bit)
+50	Introduction to GDB
+
