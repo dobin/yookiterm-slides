@@ -1,0 +1,42 @@
+Exploit Mitigation Related 
+
+Questions: 
+1: Was sind die Unterschiede zwischen einem local- und remote Exploit?
+2: Wie verhalten sich Netzwerk Server im falle eines crashes? Hat das einen Einfluss auf das Exploiting? 
+
+3: Was sind die Drei wichtigsten Anti-Exploit Mechanismen?
+4: Wie funktioniert ASLR? 
+5: Wie funktioniert DEP?
+6: Wie funktioniert Stack Canary? 
+7: Wie kann man ASLR umgehen?
+8: Wie kann man DEP umgehen?
+9: Wie kann man Stack canary umgehen?
+
+10: welcher teil des exploits verhindert ASLR/DEP/stackcanary 
+
+
+Answers: 
+
+1: Grundlegend gibt es keinen. Alle Exploit Techniken funktionieren identisch. Jedoch hat man bei lokalen Exploits mehr Informationen (das Binary und dessen Inhalt, die genaue Program Version, Auslastung des Systems usw.). Bei lokalen Angriffen hat man potentiell mehr Angriffsoberfläche (geladene Dateien, Environment Variablen, Parameter etc). Bei Remote Exploits werden speziell aufgebaute Packete an den Server geschickt, die die Verwundbare Funktion anspricht und ausnützt. Anders ist vorallem der Payload (braucht Connect-Back Shellcode etc.). 
+
+2: Server erstellen Kind Prozesse (fork()), die eine Kopie des Parents sind, für jeden Client. Dadurch sind auch Schutzmechanismen-Eigenschaften kopiert, speziell das geheime Stack-Cookie und der Offset zu Segmenten (bzw. das Memory Layout). Ein abgestürzter Kind Prozess hat kein Einfluss auf den Server. Dadurch ist es möglich, Brute-Force Angriffe durchzuführen (speziell auf das Stack Cookie, und die ASLR Entropie). 
+
+3: ASLR, DEP, Stack Canary 
+
+4: Randomisiert das Memory Layout, so dass der Angreifer wichtige Informationen/Offsets fehlen (Addresse des Shellcodes, Addressen von Funktionen etc.)
+5: Markiert alle schreibbaren Bereiche als nicht ausführbar, sodass der vom Angreifer hochgeladenen Code (Shellcode) nicht ausgeführt werden kann 
+6: Bevor beim beenden einer Funktion der stored Instruction Pointer vom Stack geholt wird, um den Instruction Flow bei der Parent Funktion weiterzuführen, wird ein zuerst die Integrität einer Memory Stelle VOR dem SIP kontrolliert 
+
+7-9: Siehe Grafik "Exploit Mitigations" in den Folien. Hier ein paar Beispiele 
+7: 
+- Exploit so designen, sodass keine Abhängigkeit auf ASLR'te Bereiche existieren (ausnützen nicht-ASLR Bereiche) 
+- Information disclosure, um das Memory Layout zu rekonstruieren 
+8: 
+- Kein Code hochladen, sondern schon Vorhandene Funktionen anspringen  (Ret2plt)
+- Teile von existierenden Code missbrauchen (ROP) 
+9: 
+- Brute Force 
+- Information Disclosure 
+- Ein anderer Bug anstatt einem simplen Stack Based Buffer Overflow finden 
+
+10: -

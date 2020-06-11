@@ -1,0 +1,11 @@
+Windows Related
+
+Questions: 
+1) Funktionieren exploits unter windows grundlegend anders?
+2) Gibt es unterschiede zwischen windows und linux bzgl. exploiting? 
+3) Gibt es Unterschiede zwischen windows und linux bzgl. exploit mitigations?
+
+Answers: 
+1) Nein. 
+2) Windows besitzt structured exception handler auf dem stack, die man für lange Zeit für exploits missbrauchen konnte. 
+3) Windows hat im Laufe der Zeit alle Exploit Mitigation Techniken bekommen, die Linux derzeit hat. Zusätzlich wird CFI konsequenter eingesetzt. 
