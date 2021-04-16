@@ -1,0 +1,9 @@
+Weitergehende Fragen 
+
+1) Gibt es Möglichkeiten, Memory Corruption's komplett zu eliminieren?
+2) Sind die derzeit vorhandenen Anti-Exploit Mechanismen adäquat? 
+3) Hast du Ideen für die Verbesserung von Anti-Exploit Mechanismen?
+4) Wie steht es um Technologien wie Virtuelle Maschinen, Container und Sandboxing im Vergleich zu Anti-Exploit Mechanismen. Vor- und Nachteile?
+5) Warum ist ein Browser besondern gefärdet / anfällig für Memory Corruption Angriffe?
+
+
